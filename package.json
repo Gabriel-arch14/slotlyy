@@ -1,0 +1,17 @@
+{
+  "name": "slotlyy",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Slotlyy - онлайн магазин за геймърски принадлежности",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n server,client -c magenta,cyan \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "reset-db": "npm run reset-db --prefix server",
+    "online": "node scripts/online.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

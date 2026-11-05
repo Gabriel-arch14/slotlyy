@@ -1,0 +1,20 @@
+# Зависимости и билд
+node_modules
+dist
+*.tsbuildinfo
+
+# Базата данни (поръчки, клиенти) — остава само на компютъра
+server/data
+
+# Тайни ключове и пароли — НИКОГА в GitHub
+.env
+.env.*
+!.env.example
+
+# Инструментът за Cloudflare Tunnel (тегли се отделно)
+tools/
+
+# Логове и системни файлове
+*.log
+.DS_Store
+Thumbs.db
